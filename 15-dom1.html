@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello Word</h1>
+    
+    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, eveniet? Explicabo, sapiente vel! <b>veriatts</b>Dicta, cupiditate doloremque. Quis, rem debitis voluptas quidem quae fugiat ullam quisquam deleniti soluta, nisi suscipit repudiandae!</p>
+    
+    <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    
+    
+    <script>
+
+    const elH1=document.querySelector("h1");
+    console.log(elH1.innerText);
+
+    elH1.innerText="Hello <em>Javascript</em>";
+    //elH1.innerHTML="Hello <em>Javascript</em>";
+
+
+    const elHome=document.querySelector(".menu li:first-child");
+    elHome.innerText="Home Page";
+
+    const allLi=document.querySelectorAll(".menu li");
+    console.log(allLi);
+
+    const elDesc=document.querySelector(".desc");
+    console.log(elDesc.innerText) // nur Text kommt
+    console.log(elDesc.innerHTML); //HTML kommt
+
+
+    </script>
+</body>
+</html>
