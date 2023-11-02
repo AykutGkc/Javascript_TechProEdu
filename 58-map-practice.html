@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+   
+   <script >
+ 
+ const pricesTL=[1231,5534,345,678,234,6892];
+ const eur=30.15;
+ const gpb=34.57;
+
+   const pricesEUR=pricesTL.map((price)=>(price/eur).toFixed(2));
+   const pricesGPB=pricesTL.map((price)=>(price/gpb).toFixed(2));
+
+   console.log(pricesEUR,pricesGPB)
+
+   </script>
+
+
+</body>
+</html>

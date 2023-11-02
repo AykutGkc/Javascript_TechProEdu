@@ -34,6 +34,11 @@ document.querySelector("#btnAddCity").addEventListener("click",()=>{
     loadList();
 })
 
+document.querySelector("#btnMix").addEventListener("click",()=>{
+    getRamdom();
+    loadList();
+});
+
 
 const loadList =() => {
 
@@ -45,6 +50,20 @@ const loadList =() => {
     document.querySelector("#cityList").innerHTML=html;
 };
 
+const getRamdom =() => {
+
+    const arr=[];
+
+    while(cities.length>0){
+        const rndIndex=Math.floor(Math.random()*(cities.length));
+        const city=cities[rndIndex]
+        arr.push(city);
+        cities.slice(rndIndex,1);
+    }
+
+    cities.splice(0,0,...arr);
+
+};
 
 
 loadList();
